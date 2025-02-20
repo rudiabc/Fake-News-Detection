@@ -98,7 +98,7 @@ Fake News Detector is a website that leverages a machine learning model to autom
             </li>
         </ul>
     </li>
-    <li>Check for Dataset Information
+    <li>Check for Dataset Information <br>
         <img src="assets/contents/2.PNG">
         <p>The dataset consists of 6,335 rows and 4 columns, with the following data types:</p>
         <ul>
