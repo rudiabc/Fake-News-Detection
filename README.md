@@ -26,7 +26,7 @@ Fake News Detector is a website that leverages a machine learning model to autom
             <li>'Unnamed: 0' – Undefined and does not contribute to the analysis.</li>
             <li>'title' – Contains the news headline.</li>
             <li>'text' – The main content of the news article.</li>
-            <li>'label' – Indicates the type of news, categorized as REAL or FAKE.</li>
+            <li>'label' – Indicates the type of news, categorized as <b>REAL</b> or <b>FAKE</b>.</li>
         </ul>
     </li>
 </ul>
@@ -73,7 +73,7 @@ Fake News Detector is a website that leverages a machine learning model to autom
             <li>confusion_matrix</li>
             <li>classification_report</li>
         </ul>
-    <li>Model Optimizatiom</li>
+    <li>Model Optimization</li>
         <ul>
             <li>GridSearchCV</li>
         </ul>
@@ -81,4 +81,45 @@ Fake News Detector is a website that leverages a machine learning model to autom
         <ul>
             <li>pickle</li>
         </ul>
+</ul>
+
+<h2>Exploratory Data Analysis (EDA)</h2>
+<ul>
+    <li>View Dataset
+        <img src="assets/contents/1.PNG">
+        <ul>
+            <li>The dataset consists of four columns:
+            <ul>
+                <li>'Unnamed: 0' – Undefined and does not contribute to the analysis.</li>
+                <li>'title' – Contains the news headline.</li>
+                <li>'text' – The main content of the news article.</li>
+                <li>'label' – Indicates the type of news, categorized as <b>REAL</b> or <b>FAKE</b>.</li>
+            </ul>
+            </li>
+        </ul>
+    </li>
+    <li>Check for Dataset Information
+        <img src="assets/contents/2.PNG">
+        <p>The dataset consists of 6,335 rows and 4 columns, with the following data types:</p>
+        <ul>
+            <li>1 numerical column: 'Unnamed: 0' (Undefined and not useful for analysis)</li>
+            <li>3 categorical columns:
+                <ul>
+                    <li>'title' (News headline)</li>
+                    <li>'text' (News content)</li>
+                    <li>'label' (Category: REAL or FAKE)</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>Check for Missing Values</li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
 </ul>
