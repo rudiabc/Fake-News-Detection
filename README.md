@@ -1,1 +1,72 @@
 <h1>Fake News Detector</h1>
+<h3>Background</h3>
+<p>Fake news refers to false or misleading information disseminated as news, often with the intent of influencing public opinion, gaining specific advantages, or damaging the reputation of an individual or group. It can take the form of completely fabricated stories, partially true information that is distorted to be misleading, or news presented out of its original context.
+
+Due to the frequent spread of fake news, a machine learning model has been developed and made accessible to the public to help reduce trust in misleading information.
+
+Fake News Detector is a website that leverages a machine learning model to automatically determine whether a news article is genuine or fake.</p>
+
+<h3>Objectives</h3>
+<p>
+    <ul>
+        <li>Detect and identify fake news.</li>
+        <li>Develop AI technology for text analysis.</li>
+        <li>Prevent the spread of misinformation and disinformation.</li>
+        <li>Enhance digital literacy and public awareness.</li>
+        <li>Filter content on news platforms.</li>
+        <li>Support high-quality and credible journalism.</li>
+        <li>Reduce the influence of propaganda and political manipulation.</li>
+    </ul>
+</p>
+<h3>Tools, IDE and Dataset Source</h3>
+<ul>
+    <li>Python</li>
+    <li>Google Colab</li>
+    <li>Visual Studio Code</li>
+    <li>CSV</li>
+    <li>Dataset Source: Kaggle<br>Link: <a href="https://www.kaggle.com/datasets/rajatkumar30/fake-news">https://www.kaggle.com/datasets/rajatkumar30/fake-news</a></li><br>
+    <p><img src="assets/logos/python.png" width='30'> <img src="assets/logos/colab.png" width='40'> <img src="assets/logos/vscode.png" width='25'> <img src="assets/logos/csv.png" width='25'> <img src="assets/logos/kaggle.svg" width='80'></p>
+</ul>
+<h3>Library</h3>
+<ul>
+    <li>Data Manipulation</li>
+        <ul>
+            <li>Pandas</li>
+            <li>Numpy</li>
+        </ul>
+    <li>Data Visualization</li>
+        <ul>
+            <li>Matplotlib</li>
+            <li>Seaborn</li>
+            <li>WordCloud</li>
+        </ul>
+    <li>Data Preprocessing</li>
+        <ul>
+            <li>re</li>
+            <li>nktk</li>
+            <li>TfidfVectorizer</li>
+            <li>train_test_split</li>
+            <li>text_tokenize</li>
+        </ul>
+    <li>Modelling</li>
+        <ul>
+            <li>MultinomialNB (Algoritma Naive Bayes)</li>
+            <li>RandomForestClassifier (Algoritma Random Forest)</li>
+            <li>KNeighborsClassifier (Algoritma k-Nearest Neighbors/KNN)</li>
+            <li>LogisticRegression (Algoritma Logistic Regression)</li>
+            <li>SVC (Algoritma Support Vector Classification)</li>
+        </ul>
+    <li>Model Evaluation</li>
+        <ul>
+            <li>confusion_matrix</li>
+            <li>classification_report</li>
+        </ul>
+    <li>Model Optimizatiom</li>
+        <ul>
+            <li>GridSearchCV</li>
+        </ul>
+    <li>Pickle File</li>
+        <ul>
+            <li>pickle</li>
+        </ul>
+</ul>
