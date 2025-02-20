@@ -125,8 +125,8 @@ Fake News Detector is a website that leverages a machine learning model to autom
         <br>The most frequently discussed topic in this dataset is political news.
     </li>
     <li>Count Label and View Label Percentage with Pie Chart<br>
-        <img src="assets/contents/6.PNG">
-        <img src="assets/contents/7.PNG" width="150">
+        <img src="assets/contents/6.PNG"><br>
+        <img src="assets/contents/7.PNG">
         <br>The dataset consists of 3,171 REAL news articles (50.06%) and 3,164 FAKE news articles (49.94%). From this visualization, we can conclude that the dataset is balanced, meaning there is no need for imbalance handling during model training.
     </li>
     <li></li>
