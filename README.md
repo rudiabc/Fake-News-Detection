@@ -129,9 +129,36 @@ Fake News Detector is a website that leverages a machine learning model to autom
         <img src="assets/contents/7.PNG">
         <br>The dataset consists of 3,171 REAL news articles (50.06%) and 3,164 FAKE news articles (49.94%). From this visualization, we can conclude that the dataset is balanced, meaning there is no need for imbalance handling during model training.
     </li>
-    <li></li>
-    <li></li>
-    <li></li>
+</ul>
+<h2>Data Preprocessing</h2>
+<ul>
+    <li>The dataset was copied to facilitate data preprocessing, ensuring that the original data remains intact while transformations and modifications are applied to the duplicated version.</li>
+    <li>The 'Unnamed: 0' column was removed as it does not contribute to the analysis or model performance.<br>
+    <img src="assets/contents/8.PNG"><br>After removing the 'Unnamed: 0' column, the dataset now consists of three columns
+    </li>
+    <li>The 'title' and 'text' columns were merged into a new column called 'news', combining both the headline and content into a single text field for better analysis and model performance.<br>
+    <img src="assets/contents/9.PNG">
+    </li>
+    <li>Text Cleaning<br>
+        Text cleaning was performed using Punkt, Stopwords, and WordNet, which includes:
+        <ul>
+            <li>Punkt – Removes punctuation marks.</li>
+            <li>Stopwords – Removes common words like 'the', 'and', etc that do not add meaningful context.</li>
+            <li>WordNet – Performs lemmatization, converting words to their base forms for consistency.</li>
+        </ul>
+        This preprocessing step helps improve the quality of text data for more accurate fake news detection.<br>
+        Text cleaning was performed using the following steps:
+        <ul>
+            <li>Convert to lowercase – Standardizes text by converting all characters to lowercase.</li>
+            <li>Removing URLs – Deletes any links present in the text to prevent irrelevant information from affecting analysis.</li>
+            <li>Replacing all non-alphabetic characters with spaces – Ensures that only meaningful words remain by removing numbers, special characters, and symbols.</li>
+            <li>Tokenization – Splits text into individual words.</li>
+            <li>Lemmatization – Converts words to their base form using WordNet lemmatizer (e.g., "running" → "run").</li>
+            <li>Remove stopwords – Filters out common words that do not contribute to meaning (e.g., "the," "is," "and").</li>
+        </ul>
+        These steps enhance the dataset's quality for better fake news detection using machine learning.
+        <br><img src="assets/contents/10.PNG">
+    </li>
     <li></li>
     <li></li>
     <li></li>
