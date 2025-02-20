@@ -85,7 +85,7 @@ Fake News Detector is a website that leverages a machine learning model to autom
 
 <h2>Exploratory Data Analysis (EDA)</h2>
 <ul>
-    <li>View Dataset
+    <li>View Dataset <br>
         <img src="assets/contents/1.PNG">
         <ul>
             <li>The dataset consists of four columns:
@@ -112,10 +112,23 @@ Fake News Detector is a website that leverages a machine learning model to autom
             </li>
         </ul>
     </li>
-    <li>Check for Missing Values</li>
-    <li></li>
-    <li></li>
-    <li></li>
+    <li>Check for Missing Values<br>
+        <img src="assets/contents/3.PNG">
+        <br>The dataset is complete, with no missing values in any of the columns.
+    </li>
+    <li>Check for Duplicate Data<br>
+        <img src="assets/contents/4.PNG">
+        <br>The dataset contains no duplicate records, ensuring the integrity and uniqueness of the data.
+    </li>
+    <li>Check for Top 5 Topic in Dataset<br>
+        <img src="assets/contents/5.PNG">
+        <br>The most frequently discussed topic in this dataset is political news.
+    </li>
+    <li>Count Label and View Label Percentage with Pie Chart<br>
+        <img src="assets/contents/6.PNG">
+        <img src="assets/contents/7.PNG">
+        <br>The dataset consists of 3,171 REAL news articles (50.06%) and 3,164 FAKE news articles (49.94%). From this visualization, we can conclude that the dataset is balanced, meaning there is no need for imbalance handling during model training.
+    </li>
     <li></li>
     <li></li>
     <li></li>
