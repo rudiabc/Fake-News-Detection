@@ -18,14 +18,26 @@ Fake News Detector is a website that leverages a machine learning model to autom
         <li>Reduce the influence of propaganda and political manipulation.</li>
     </ul>
 </p>
+<h3>Dataset</h3>
+<ul>
+    <li>Dataset Source: Kaggle<br>Link: <a href="https://www.kaggle.com/datasets/rajatkumar30/fake-news">https://www.kaggle.com/datasets/rajatkumar30/fake-news</a></li>
+    <li>Data Understanding<br>The dataset consists of four columns:
+        <ul>
+            <li>'Unnamed: 0' – Undefined and does not contribute to the analysis.</li>
+            <li>'title' – Contains the news headline.</li>
+            <li>'text' – The main content of the news article.</li>
+            <li>'label' – Indicates the type of news, categorized as REAL or FAKE.</li>
+        </ul>
+    </li>
+</ul>
 <h3>Tools, IDE and Dataset Source</h3>
 <ul>
     <li>Python</li>
     <li>Google Colab</li>
     <li>Visual Studio Code</li>
     <li>CSV</li>
-    <li>Dataset Source: Kaggle<br>Link: <a href="https://www.kaggle.com/datasets/rajatkumar30/fake-news">https://www.kaggle.com/datasets/rajatkumar30/fake-news</a></li><br>
-    <p><img src="assets/logos/python.png" width='30'> <img src="assets/logos/colab.png" width='40'> <img src="assets/logos/vscode.png" width='25'> <img src="assets/logos/csv.png" width='25'> <img src="assets/logos/kaggle.svg" width='80'></p>
+    <li>Dataset Source: Kaggle</li><br>
+    <p><img src="assets/logos/python.png" width='25'> <img src="assets/logos/colab.png" width='40'> <img src="assets/logos/vscode.png" width='23'> <img src="assets/logos/csv.png" width='20'> <img src="assets/logos/kaggle.svg" width='50'></p>
 </ul>
 <h3>Library</h3>
 <ul>
