@@ -156,10 +156,21 @@ Fake News Detector is a website that leverages a machine learning model to autom
             <li>Lemmatization – Converts words to their base form using WordNet lemmatizer (e.g., "running" → "run").</li>
             <li>Remove stopwords – Filters out common words that do not contribute to meaning (e.g., "the," "is," "and").</li>
         </ul>
-        These steps enhance the dataset's quality for better fake news detection using machine learning.
+        These steps enhance the dataset's quality for better fake news detection using machine learning.<br>The cleaned text data was stored in a new column called 'clean_news', ensuring that the original 'news' column remains intact for reference. This processed data will be used for further analysis and model training.
         <br><img src="assets/contents/10.PNG">
     </li>
-    <li></li>
+    <li>WordCloud After Cleaning Text
+        <ul>
+            <li>WordCloud of Real News<br>
+                <img src="assets/contents/11.PNG">
+                <br>The REAL news in the dataset is most likely related to U.S. politics, particularly elections, as indicated by the frequent occurrence of words such as Trump, Clinton, campaign, vote, republican, and president. This suggests that the dataset primarily focuses on political news coverage.
+            </li>
+            <li>WordCloud of Fake News<br>
+                <img src="assets/contents/12.PNG">
+                <br>Fake News tends to focus on prominent political figures, conspiracy theories, and unverified claims. Emotional and provocative words are more dominant, often aiming to shape public opinion by manipulating information. Compared to the WordCloud of REAL news, Fake News appears to be more centered on sensational claims and controversial narratives, highlighting its tendency to spread misinformation through exaggerated or misleading content.
+            </li>
+        </ul>
+    </li>
     <li></li>
     <li></li>
 </ul>
