@@ -55,7 +55,7 @@ Fake News Detector is a website that leverages a machine learning model to autom
     <li>Data Preprocessing</li>
         <ul>
             <li>re</li>
-            <li>nktk</li>
+            <li>nltk</li>
             <li>TfidfVectorizer</li>
             <li>train_test_split</li>
             <li>text_tokenize</li>
