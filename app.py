@@ -1,3 +1,4 @@
+import pandas as pd
 import streamlit as st
 import joblib
 
@@ -14,10 +15,17 @@ if st.button("Check News"):
         transform_input = vectorizer.transform([news_input])
         prediction = model.predict(transform_input)
         
+        tf_idf = vectorizer.get_feature_names_out()
+        df_input_tfidf = pd.DataFrame(transform_input.toarray(), columns=tf_idf)
+        
         if prediction[0]==0:
             st.success("Real News")
         else:
             st.error("Fake News")
+            
+        st.subheader("Result of Vectorization using TF-IDF Vectorizer")
+        st.dataframe(df_input_tfidf)
+        
             
     else:
         st.warning("Please Enter News Article to Analyze!")
