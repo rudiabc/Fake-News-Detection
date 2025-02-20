@@ -1,12 +1,12 @@
 <h1>Fake News Detector</h1>
-<h3>Background</h3>
+<h2>Background</h2>
 <p>Fake news refers to false or misleading information disseminated as news, often with the intent of influencing public opinion, gaining specific advantages, or damaging the reputation of an individual or group. It can take the form of completely fabricated stories, partially true information that is distorted to be misleading, or news presented out of its original context.
 
 Due to the frequent spread of fake news, a machine learning model has been developed and made accessible to the public to help reduce trust in misleading information.
 
 Fake News Detector is a website that leverages a machine learning model to automatically determine whether a news article is genuine or fake.</p>
 
-<h3>Objectives</h3>
+<h2>Objectives</h2>
 <p>
     <ul>
         <li>Detect and identify fake news.</li>
@@ -18,7 +18,7 @@ Fake News Detector is a website that leverages a machine learning model to autom
         <li>Reduce the influence of propaganda and political manipulation.</li>
     </ul>
 </p>
-<h3>Dataset</h3>
+<h2>Dataset</h2>
 <ul>
     <li>Dataset Source: Kaggle<br>Link: <a href="https://www.kaggle.com/datasets/rajatkumar30/fake-news">https://www.kaggle.com/datasets/rajatkumar30/fake-news</a></li>
     <li>Data Understanding<br>The dataset consists of four columns:
@@ -30,7 +30,7 @@ Fake News Detector is a website that leverages a machine learning model to autom
         </ul>
     </li>
 </ul>
-<h3>Tools, IDE and Dataset Source</h3>
+<h2>Tools, IDE and Dataset Source</h2>
 <ul>
     <li>Python</li>
     <li>Google Colab</li>
@@ -39,7 +39,7 @@ Fake News Detector is a website that leverages a machine learning model to autom
     <li>Dataset Source: Kaggle</li><br>
     <p><img src="assets/logos/python.png" width='25'> <img src="assets/logos/colab.png" width='40'> <img src="assets/logos/vscode.png" width='23'> <img src="assets/logos/csv.png" width='20'> <img src="assets/logos/kaggle.svg" width='50'></p>
 </ul>
-<h3>Library</h3>
+<h2>Library</h2>
 <ul>
     <li>Data Manipulation</li>
         <ul>
