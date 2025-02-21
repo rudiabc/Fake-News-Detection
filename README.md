@@ -499,3 +499,9 @@ Fake News Detector is a website that leverages a machine learning model to autom
         </ul>
     </li>
 </ul>
+<h2>Model Selection</h2>
+<p>Based on the modeling results using five algorithms Naive Bayes, Random Forest, k-Nearest Neighbors, Logistic Regression, and Support Vector Classification, Logistic Regression and Support Vector Classification achieved the highest initial accuracy of 91.63%.
+
+After performing hyperparameter tuning on these two models, Logistic Regression achieved the highest accuracy of 93.76%.
+
+As a result, Logistic Regression was selected for further development and will be implemented into a web application for Fake News detection.</p>
