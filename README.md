@@ -1,13 +1,12 @@
 <h1>Fake News Detector</h1>
-<h2>Background</h2>
+<h2>Objective</h2>
 <p>Fake news refers to false or misleading information disseminated as news, often with the intent of influencing public opinion, gaining specific advantages, or damaging the reputation of an individual or group. It can take the form of completely fabricated stories, partially true information that is distorted to be misleading, or news presented out of its original context.
 
 Due to the frequent spread of fake news, a machine learning model has been developed and made accessible to the public to help reduce trust in misleading information.
 
 Fake News Detector is a website that leverages a machine learning model to automatically determine whether a news article is genuine or fake.</p>
 
-<h2>Objectives</h2>
-<p>
+<p>Objective of this project is:
     <ul>
         <li>Detect and identify fake news.</li>
         <li>Develop AI technology for text analysis.</li>
