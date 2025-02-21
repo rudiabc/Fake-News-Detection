@@ -411,7 +411,7 @@ Fake News Detector is a website that leverages a machine learning model to autom
         Among the five algorithms used, Logistic Regression and Support Vector Classification achieved the highest accuracy of 91.63%.<br>To determine the best-performing model, hyperparameter tuning will be applied to both algorithms, optimizing their parameters for improved performance.
     </li>
 </ul>
-<h2>Model Tunning</h2>
+<h2>Model Tuning</h2>
 <ul>Model tuning was performed using GridSearchCV.
     <li>Logistic Regression
         <ul>For the Logistic Regression algorithm, the following parameters were tested:
@@ -505,3 +505,58 @@ Fake News Detector is a website that leverages a machine learning model to autom
 After performing hyperparameter tuning on these two models, Logistic Regression achieved the highest accuracy of 93.76%.
 
 As a result, Logistic Regression was selected for further development and will be implemented into a web application for Fake News detection.</p>
+
+<h2>Web Application Development</h2>
+<p>The web application development is implemented using Streamlit, a Python-based framework that allows for the rapid creation of interactive web interfaces for machine learning models.
+
+This platform enables users to input news articles and receive real-time predictions on whether the news is REAL or FAKE, based on the trained Logistic Regression model.</p>
+
+<ul>
+    <li>Website Interface<br>
+        <img src="assets/contents/20.png">
+    </li>
+    <li>Detection Result Interface for <b>Real News</b><br>
+        <img src="assets/contents/21.png">
+    </li>
+    <li>Detection Result Interface for <b>Fake News</b><br>
+        <img src="assets/contents/22.png">
+    </li>
+</ul>
+<h2>Conclusion</h2>
+<ul>
+    <li>Developing a machine learning model using a dataset sourced from Kaggle to detect Fake News, with the goal of reducing public trust in misleading or deceptive information.</li>
+    <li>The distribution of Real and Fake news in the dataset is 50.06% (3,171 data points) and 49.94% (3,164 data points), respectively. This balanced dataset ensures that no additional imbalance handling is required.</li>
+    <li>
+    Data cleaning was performed by merging the ‘title’ and ‘text’ columns into a new column called ‘news’. The following preprocessing steps were then applied:
+        <ul>
+            <li>Converting all text to lowercase</li>
+            <li>Removing URLs</li>
+            <li>Replacing non-alphabetic characters with spaces</li>
+            <li>Removing punctuation</li>
+            <li>Applying lemmatization</li>
+            <li>Removing stopwords</li>
+        </ul>
+    </li>
+    <li>Based on the WordCloud visualization, the Real News in the dataset is predominantly related to U.S. politics, particularly elections, as indicated by the frequent occurrence of words such as Trump, Clinton, campaign, vote, republican, and president. In contrast, Fake News tends to focus on well-known political figures, conspiracy theories, and unverified claims. It is characterized by emotionally charged and provocative language, often aimed at manipulating public opinion. Compared to the WordCloud of Real News, Fake News appears to emphasize sensational claims and controversial narratives.</li>
+    <li>The dataset was split into training (80%) and testing (20%) to ensure a balanced evaluation of the model's performance.</li>
+    <li>Text vectorization was performed using the TF-IDF (Term Frequency-Inverse Document Frequency) Vectorizer to convert textual data into numerical representations for machine learning modeling.</li>
+    <li>Modeling was performed using five different algorithms, yielding the following accuracy scores:
+        <ul>
+            <li>Naive Bayes: 84.53%</li>
+            <li>Random Forest: 90.21%</li>
+            <li>k-Nearest Neighbors (k-NN): 84.45%</li>
+            <li>Logistic Regression: 91.63%</li>
+            <li>Support Vector Classification (SVC): 91.63%</li>
+        </ul>
+        Among these, Logistic Regression and Support Vector Classification achieved the highest accuracy at 91.63%, making them the top candidates for further optimization.
+    </li>
+    <li>Among the five algorithms tested, Logistic Regression and Support Vector Classification (SVC) achieved the highest accuracy at 91.63%, making them the most effective models for Fake News detection.</li>
+    <li>Model tuning was performed on both Logistic Regression and Support Vector Classification (SVC), resulting in the following accuracies:
+        <ul>
+            <li>Logistic Regression: 93.76%</li>
+            <li>Support Vector Classification (SVC): 93.61%</li>
+        </ul>
+        Based on these results, Logistic Regression was selected for further development into a web application due to its highest accuracy in Fake News detection.
+    </li>
+    <li>The web application was developed using Streamlit, allowing users to easily interact with the Fake News Detection model in a simple and intuitive interface.</li>
+</ul>
