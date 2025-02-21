@@ -61,11 +61,11 @@ Fake News Detector is a website that leverages a machine learning model to autom
         </ul>
     <li>Modelling</li>
         <ul>
-            <li>MultinomialNB (Algoritma Naive Bayes)</li>
-            <li>RandomForestClassifier (Algoritma Random Forest)</li>
-            <li>KNeighborsClassifier (Algoritma k-Nearest Neighbors/KNN)</li>
-            <li>LogisticRegression (Algoritma Logistic Regression)</li>
-            <li>SVC (Algoritma Support Vector Classification)</li>
+            <li>MultinomialNB (Naive Bayes Algorithm)</li>
+            <li>RandomForestClassifier (Random Forest Algorithm)</li>
+            <li>KNeighborsClassifier (k-Nearest Neighbors/KNN Algorithm)</li>
+            <li>LogisticRegression (Logistic Regression Algorithm)</li>
+            <li>SVC (Support Vector Classification Algorithm)</li>
         </ul>
     <li>Model Evaluation</li>
         <ul>
@@ -214,5 +214,288 @@ Fake News Detector is a website that leverages a machine learning model to autom
         Below are the results of the text vectorization applied to the dataset. There are a total of 49,295 unique word variations extracted from 5,068 data points or documents.<br>
         <img src="assets/contents/15.PNG"><br>
         The vectorization results were then exported as a pickle (.pkl) file for further use and model implementation.
+    </li>
+</ul>
+
+<h2>Modelling</h2>
+<ul>The modeling process was carried out using five algorithms:<br>
+    <li>Naive Bayes
+        <ul>
+            <li>A probabilistic classifier based on Bayes’ Theorem.</li>
+            <li>Works well with text classification tasks due to its ability to handle word frequency distributions.</li>
+        </ul>
+    </li>
+    <li>Random Forest
+        <ul>
+            <li>An ensemble learning method that constructs multiple decision trees and combines their outputs.</li>
+            <li>Provides high accuracy and robustness against overfitting.</li>
+        </ul>
+    </li>
+    <li>k-Nearest Neighbors (k-NN)
+        <ul>
+            <li>A distance-based algorithm that classifies a document based on the majority class of its nearest neighbors.</li>
+            <li>Suitable for pattern recognition but computationally expensive for large datasets.</li>
+        </ul>
+    </li>
+    <li>Logistic Regression
+        <ul>
+            <li>A linear model used for binary classification.</li>
+            <li>Effective in text classification, especially with TF-IDF vectorized text data.</li>
+        </ul>
+    </li>
+    <li>Support Vector Classification (SVC)
+        <ul>
+            <li>Uses hyperplanes to separate classes with maximum margin.</li>
+            <li>Effective for high-dimensional spaces, such as text data.</li>
+        </ul>
+    </li>
+</ul>
+<ul>To determine the best-performing model, the following four key metrics were used:<br>
+    <li>Accuracy
+        <ul>
+            <img src="assets/contents/16.PNG" height="40">
+            <li>Measures the percentage of correctly classified instances.</li>
+            <li>Useful when the dataset is balanced.</li>
+        </ul>
+    </li>
+    <li>Precision
+        <ul>
+            <img src="assets/contents/17.PNG" height="40">
+            <li>Represents how many predicted FAKE news articles were actually FAKE.</li>
+            <li>A higher precision means fewer false positives (real news classified as fake).</li>
+        </ul>
+    </li>
+    <li>Recall
+        <ul>
+            <img src="assets/contents/18.PNG" height="40">
+            <li>Measures how many actual FAKE news articles were correctly identified.</li>
+            <li>A higher recall ensures fewer false negatives (fake news classified as real).</li>
+        </ul>
+    </li>
+    <li>F1-Score
+        <ul>
+            <img src="assets/contents/19.PNG" height="40">
+            <li>The harmonic mean of precision and recall.</li>
+            <li>Provides a balanced measure when there is an uneven class distribution.</li>
+        </ul>
+    </li>
+    By comparing the models based on these metrics, the best-performing model for fake news detection was selected, ensuring high accuracy, precision, recall, and F1-score to effectively classify real and fake news.
+</ul>
+<ul>
+    <li>Confusion Matrix:<br>
+        <table style="text-align: center;">
+            <tr>
+                <th>Algorithm</th>
+                <th>True Positive (TP)</th>
+                <th>False Positive (FP)</th>
+                <th>False Negative (FN)</th>
+                <th>True Negative (TN)</th>
+            </tr>
+            <tr>
+                <td>Naive Bayes</td>
+                <td>624</td>
+                <td>15</td>
+                <td>181</td>
+                <td>447</td>
+            </tr>
+            <tr>
+                <td>Random Forest</td>
+                <td>582</td>
+                <td>57</td>
+                <td>67</td>
+                <td>561</td>
+            </tr>
+            <tr>
+                <td>k-Nearest Neighbors</td>
+                <td>597</td>
+                <td>42</td>
+                <td>155</td>
+                <td>473</td>
+            </tr>
+            <tr>
+                <td>Logistic Regression</td>
+                <td>575</td>
+                <td>64</td>
+                <td>42</td>
+                <td>586</td>
+            </tr>
+            <tr>
+                <td>Support Vector Classification</td>
+                <td>575</td>
+                <td>64</td>
+                <td>42</td>
+                <td>586</td>
+            </tr>
+        </table>
+    </li>
+    <li>Classification Report:<br>
+        <table style="text-align: center;">
+            <tr>
+                <th colspan="2">Algorithm</th>
+                <th>Precision (%)</th>
+                <th>Recall (%)</th>
+                <th>F1-Score (%)</th>
+                <th>Accuracy (%)</th>
+            </tr>
+            <tr>
+                <td rowspan="2">Naive Bayes</td>
+                <td>REAL</td>
+                <td>77,52</td>
+                <td>97,65</td>
+                <td>86,43</td>
+                <td rowspan="2">84,53</td>
+            </tr>
+            <tr>
+                <td>FAKE</td>
+                <td>96,75</td>
+                <td>71,18</td>
+                <td>82,02</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Random Forest</td>
+                <td>REAL</td>
+                <td>89,68</td>
+                <td>91,08</td>
+                <td>90,73</td>
+                <td rowspan="2">90,21</td>
+            </tr>
+            <tr>
+                <td>FAKE</td>
+                <td>90,78</td>
+                <td>89,33</td>
+                <td>90,05</td>
+            </tr>
+            <tr>
+                <td rowspan="2">k-Nearest Neighbors</td>
+                <td>REAL</td>
+                <td>79,37</td>
+                <td>93,43</td>
+                <td>85,84</td>
+                <td rowspan="2">84,45</td>
+            </tr>
+            <tr>
+                <td>FAKE</td>
+                <td>91,84</td>
+                <td>75,32</td>
+                <td>82,76</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Logistic Regression</td>
+                <td>REAL</td>
+                <td>93,19</td>
+                <td>89,88</td>
+                <td>91,56</td>
+                <td rowspan="2">91,63</td>
+            </tr>
+            <tr>
+                <td>FAKE</td>
+                <td>90,15</td>
+                <td>93,31</td>
+                <td>91,71</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Support Vector Classification</td>
+                <td>REAL</td>
+                <td>93,19</td>
+                <td>89,88</td>
+                <td>91,56</td>
+                <td rowspan="2">91,63</td>
+            </tr>
+            <tr>
+                <td>FAKE</td>
+                <td>90,15</td>
+                <td>93,31</td>
+                <td>91,71</td>
+            </tr>
+        </table>
+        Among the five algorithms used, Logistic Regression and Support Vector Classification achieved the highest accuracy of 91.63%.<br>To determine the best-performing model, hyperparameter tuning will be applied to both algorithms, optimizing their parameters for improved performance.
+    </li>
+</ul>
+<h2>Model Tunning</h2>
+<ul>Model tuning was performed using GridSearchCV.
+    <li>Logistic Regression
+        <ul>For the Logistic Regression algorithm, the following parameters were tested:
+            <li>'C': [0.1, 1, 10, 100, 1000, 10000]</li>
+            <li>'solver': ['lbfgs', 'liblinear', 'newton−cg']</li>
+            <li>'max_iter': [100,1000]</li>
+            After hyperparameter tuning, the best combination found was {C: 10000, max_iter: 100, solver: 'liblinear'}.
+        </ul>
+    </li>
+    <li>Support Vector Classification
+        <ul>For the Support Vector Classification algorithm, the following parameters were tested:
+            <li>'C': [0.1, 1, 10, 100]</li>
+            <li>'gamma': ['scale', 'auto']</li>
+            <li>'kernel': ['linear', 'rbf']</li>
+            After hyperparameter tuning, the best combination found was {C: 1, gamma: 'scale', kernel: 'linear'}.
+        </ul>
+    </li>
+        This optimized parameter set will be used for further modeling to enhance the performance of the Logistic Regression and Support Vector Classification algorithm.
+    <li>Below is the evaluation matrix of the model after hyperparameter tuning.
+        <ul>
+            <li>Confusion Matrix:
+                <table style="text-align: center;">
+                    <tr>
+                        <th>Algorithm</th>
+                        <th>True Positive (TP)</th>
+                        <th>False Positive (FP)</th>
+                        <th>False Negative (FN)</th>
+                        <th>True Negative (TN)</th>
+                    </tr>
+                    <tr>
+                        <td>Logistic Regression</td>
+                        <td>598</td>
+                        <td>41</td>
+                        <td>38</td>
+                        <td>590</td>
+                    </tr>
+                    <tr>
+                        <td>Support Vector Classification</td>
+                        <td>593</td>
+                        <td>46</td>
+                        <td>35</td>
+                        <td>593</td>
+                    </tr>
+                </table>
+            </li>
+            <li>
+                <table style="text-align: center;">
+                    <tr>
+                        <th colspan="2">Algorithm</th>
+                        <th>Precision (%)</th>
+                        <th>Recall (%)</th>
+                        <th>F1-Score (%)</th>
+                        <th>Accuracy (%)</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Logistic Regression</td>
+                        <td>REAL</td>
+                        <td>94,03</td>
+                        <td>93,58</td>
+                        <td>93,80</td>
+                        <td rowspan="2">93,76</td>
+                    </tr>
+                    <tr>
+                        <td>FAKE</td>
+                        <td>93,50</td>
+                        <td>93,95</td>
+                        <td>93,73</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Support Vector Classification</td>
+                        <td>REAL</td>
+                        <td>94,43</td>
+                        <td>92,80</td>
+                        <td>93,61</td>
+                        <td rowspan="2">93,62</td>
+                    </tr>
+                    <tr>
+                        <td>FAKE</td>
+                        <td>92,80</td>
+                        <td>94,43</td>
+                        <td>93,61</td>
+                    </tr>
+                </table>
+            </li>
+        </ul>
     </li>
 </ul>
