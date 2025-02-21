@@ -170,6 +170,49 @@ Fake News Detector is a website that leverages a machine learning model to autom
             </li>
         </ul>
     </li>
-    <li></li>
-    <li></li>
+    <li>Split Data<br>The features and target variables are defined as follows:
+        <ul>
+            <li>Input Feature: 'clean_news' – The preprocessed text data.</li>
+            <li>Target Variable: 'label' – Categorical values transformed into numerical labels:
+                <ul>
+                    <li>REAL → 0</li>
+                    <li>FAKE → 1</li>
+                </ul>
+            </li>
+        </ul>
+        The dataset was split into training (80%) and testing (20%), resulting in:
+        <ul>
+            <li>Training Data: 5,068 samples</li>
+            <li>Testing Data: 1,267 samples</li>
+            This split ensures the model is trained on a sufficient amount of data while retaining enough for evaluation and performance testing.
+        </ul>
+    </li>
+    <li>Vectorization<br>
+        Text vectorization was performed using TF-IDF (Term Frequency-Inverse Document Frequency) Vectorizer, which transforms the 'clean_news' column into a numerical representation. This technique helps the model understand the importance of words within the dataset by assigning higher weights to significant terms while reducing the impact of commonly used words.<br>
+        TF-IDF Formula:<br>TF-IDF (Term Frequency-Inverse Document Frequency) is a numerical statistic used to reflect the importance of a word in a document relative to a collection of documents (corpus).
+        <ul>
+            <li>TF (Term Frequency)
+                <ul>
+                    <img src="assets/contents/13.PNG" height="40">
+                    <li><i style="font-family:georgia">f<i style="font-size:10px">t,d</i></i> = Number of times term t appears in document d.</li>
+                    <li><i style="font-family:georgia">N<i style="font-size:10px">d</i></i> = Total number of terms in document d.</li>
+                </ul>
+            </li>
+            <li>IDF (Inverse Document Frequency)
+                <ul>
+                    <img src="assets/contents/14.PNG" height="40">
+                    <li><i style="font-family:georgia">N</i> = Total number of document.</li>
+                    <li><i style="font-family:georgia">DF<i style="font-size:10px">t</i></i> = Number of documents containing term t.</li>
+                </ul>
+            </li>
+            <li>TF-IDF Score
+                <ul>
+                    <i style="font-family:georgia">TFIDF(t,d) = TF(t,d) * IDF(t)</i>
+                </ul>
+            </li>
+        </ul>
+        Below are the results of the text vectorization applied to the dataset. There are a total of 49,295 unique word variations extracted from 5,068 data points or documents.<br>
+        <img src="assets/contents/15.PNG"><br>
+        The vectorization results were then exported as a pickle (.pkl) file for further use and model implementation.
+    </li>
 </ul>
