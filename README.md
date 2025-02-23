@@ -331,7 +331,8 @@ Fake News Detector is a website that leverages a machine learning model to autom
     <li>Classification Report:<br>
         <table style="text-align: center;">
             <tr>
-                <th colspan="2">Algorithm</th>
+                <th>Algorithm</th>
+                <th>Class</th>
                 <th>Precision (%)</th>
                 <th>Recall (%)</th>
                 <th>F1-Score (%)</th>
@@ -457,10 +458,11 @@ Fake News Detector is a website that leverages a machine learning model to autom
                     </tr>
                 </table>
             </li>
-            <li>
+            <li>Classification Report
                 <table style="text-align: center;">
                     <tr>
-                        <th colspan="2">Algorithm</th>
+                        <th>Algorithm</th>
+                        <th>Class</th>
                         <th>Precision (%)</th>
                         <th>Recall (%)</th>
                         <th>F1-Score (%)</th>
